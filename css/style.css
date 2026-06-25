@@ -1,0 +1,29 @@
+/* 基础全站全局样式 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f4f7f6; color: #333; line-height: 1.6; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+/* 导航栏样式 */
+.navbar { background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.04); position: sticky; top: 0; z-index: 100; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+.logo { font-size: 1.25rem; font-weight: bold; text-decoration: none; color: #2c3e50; }
+.nav-links a { text-decoration: none; color: #555; margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover { color: #007bff; }
+
+/* 欢迎页背景 */
+.hero { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #e0eafc, #cfdef3); border-bottom: 1px solid #e2e8f0; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 12px; color: #2c3e50; }
+.hero p { font-size: 1.1rem; color: #5a6c7d; }
+
+/* 首页分类板块 */
+.content { padding: 50px 20px; }
+.category-box { margin-bottom: 45px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+.category-box h2 { border-bottom: 2px solid #edf2f7; padding-bottom: 12px; margin-bottom: 20px; color: #2d3748; }
+.post-list { list-style: none; }
+.post-list li { display: flex; align-items: center; margin-bottom: 18px; font-size: 1.1rem; }
+.date { color: #a0aec0; margin-right: 25px; font-family: monospace; font-size: 0.95rem; }
+.post-list a { color: #3182ce; text-decoration: none; font-weight: 500; }
+.post-list a:hover { color: #2b6cb0; text-decoration: underline; }
+
+/* 全站通用页脚 */
+footer { text-align: center; padding: 30px; color: #a0aec0; font-size: 0.9rem; margin-top: 40px; }
