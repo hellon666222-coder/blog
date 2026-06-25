@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. 修改这里：变成你当前文章的标题 -->
+    <title>文章标题 - 我的数字花园</title>
+    
+    <!-- 核心样式：使用 ../ 回退到根目录，再加载 css -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- 文章专属的排版美化样式 -->
+    <style>
+        .article-card { background: #ffffff; padding: 40px; margin-top: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .article-header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
+        .article-title { font-size: 2.2rem; color: #2c3e50; line-height: 1.3; margin-bottom: 15px; }
+        .article-meta { color: #999; font-size: 0.95rem; display: flex; gap: 15px; }
+        .article-meta span { display: inline-flex; align-items: center; }
+        
+        /* 正文排版优化 */
+        .article-body { font-size: 1.15rem; color: #333333; line-height: 1.8; }
+        .article-body p { margin-bottom: 24px; text-align: justify; }
+        .article-body h2 { font-size: 1.6rem; color: #2c3e50; margin: 40px 0 20px 0; padding-bottom: 8px; border-bottom: 1px solid #f1f3f5; }
+        .article-body h3 { font-size: 1.3rem; color: #343a40; margin: 30px 0 15px 0; }
+        
+        /* 针对文章内图片的完美包裹 */
+        .article-image-box { text-align: center; margin: 35px 0; background: #fafafa; padding: 10px; border-radius: 6px; }
+        .article-image-box img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .article-image-caption { color: #888; font-size: 0.9rem; margin-top: 10px; }
+        
+        /* 响应式手机端适配 */
+        @media (max-width: 600px) {
+            .article-card { padding: 20px; margin-top: 15px; }
+            .article-title { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <!-- 统一返回主页的按钮 -->
+            <a href="../index.html" class="logo">🔙 返回主页</a>
+        </div>
+    </header>
+
+    <!-- 文章主体容器 -->
+    <main class="container">
+        <article class="article-card">
+            
+            <!-- 文章头部信息（标题、日期、分类） -->
+            <header class="article-header">
+                <!-- 2. 修改这里：文章大标题 -->
+                <h1 class="article-title">这里写你的文章标题</h1>
+                <div class="article-meta">
+                    <!-- 3. 修改这里：发布日期 -->
+                    <span>📅 2026-06-25</span>
+                    <!-- 4. 修改这里：文章分类标签 -->
+                    <span>🏷️ 生活随笔 / 技术笔记</span>
+                </div>
+            </header>
+
+            <!-- 文章正文区域 -->
+            <div class="article-body">
+                
+                <!-- 5. 修改这里：开始写你的段落内容 -->
+                <p>这里是文章的第一段。你可以直接在这里打字，写下你的想法、心情或者技术心得。这个模板已经调整好了字号和行间距，读起来会非常舒服。</p>
+
+                <h2>这是一个小标题（H2 标签）</h2>
+                <p>如果你想把文章分成不同的段落或小节，可以使用标题标签。文字之间会自动保持好看的间距。</p>
+
+                <!-- 6. 插入图片的核心模块：如果不放图片，可以直接删掉下方这 4 行 -->
+                <div class="article-image-box">
+                    <img src="../images/life-pic.jpg" alt="图片描述">
+                    <p class="article-image-caption">📷 这里是图片的文字介绍（如：今天拍的夕阳）</p>
+                </div>
+
+                <h3>这是一个更小一点的标题（H3 标签）</h3>
+                <p>继续写你的正文内容。尽情记录你的代码或者生活吧！</p>
+
+            </div>
+            
+        </article>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2026 Powered by GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
