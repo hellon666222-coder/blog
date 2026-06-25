@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独立开发GU</title>
+    <!-- 首页在根目录，直接使用 ./ 就能找到 css 文件夹 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="./index.html" class="logo">🌿 我的空间</a>
+            <nav class="nav-links">
+                <a href="./index.html">首页</a>
+                <a href="#tech-section">技术探讨</a>
+                <a href="#life-section">生活随笔</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 欢迎区域 -->
+    <section class="hero">
+        <h1>欢迎来到独立开发GU的数字花园</h1>
+        <p>左手写代码的逻辑，右手记录生活的温度。</p>
+    </section>
+
+    <!-- 文章分类列表主区域 -->
+    <main class="container content">
+        
+        <!-- 分类一：技术探讨 -->
+        <section id="tech-section" class="category-box">
+            <h2>💻 技术探讨 (Tech)</h2>
+            <ul class="post-list">
+                <li>
+                    <span class="date">2026-06-25</span>
+                    <!-- 链接到 tech 文件夹下的具体 HTML 页面 -->
+                    <a href="./dev/git-skills.html">华为云服务器迁移到阿里云</a>
+                </li>
+                <!-- 以后写了新的技术博客，就在下面复制一行 <li> 标签 -->
+            </ul>
+        </section>
+
+        <!-- 分类二：生活随笔 -->
+        <section id="life-section" class="category-box">
+            <h2>☕ 生活随笔 (Life)</h2>
+            <ul class="post-list">
+                <li>
+                    <span class="date">2026-06-24</span>
+                    <!-- 链接到 life 文件夹下的具体 HTML 页面 -->
+                    <a href="./life/daily-walk.html">夏日傍晚的公园漫步与猫</a>
+                </li>
+                <!-- 以后写了新的生活随笔，就在下面复制一行 <li> 标签 -->
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2026 Powered by GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
